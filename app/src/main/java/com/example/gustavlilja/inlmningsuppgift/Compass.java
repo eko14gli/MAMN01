@@ -33,6 +33,7 @@ public class Compass extends AppCompatActivity implements SensorEventListener {
     private MediaPlayer mp;
 
     @Override
+    // Method
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compass);
