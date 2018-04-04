@@ -13,10 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- *  @see https://www.wlsdevelop.com/index.php/en/blog?option=com_content&view=article&id=38
+ *  @see //https://www.wlsdevelop.com/index.php/en/blog?option=com_content&view=article&id=38
  */
 public class Compass extends AppCompatActivity implements SensorEventListener {
 
+    // Variables
     ImageView compass_img;
     TextView txt_compass;
     int mAzimuth;
