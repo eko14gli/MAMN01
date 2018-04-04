@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="345dp"
+        android:layout_height="224dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="143dp">
+
+        <TextView
+            android:id="@+id/xView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="X"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/yView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/xView"
+            android:layout_alignRight="@+id/xView"
+            android:layout_centerVertical="true"
+            android:text="Y"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <TextView
+            android:id="@+id/zView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/yView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/yView"
+            android:layout_marginBottom="25dp"
+            android:text="Z"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="187dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

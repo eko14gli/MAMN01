@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Inlämningsuppgift</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Compass</string>
+    <string name="button_acc">Accelerometer</string>
+</resources>
