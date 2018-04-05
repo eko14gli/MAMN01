@@ -14,12 +14,13 @@ import android.widget.TextView;
 import static android.view.KeyCharacterMap.ALPHA;
 
 /**
- * @see https://www.youtube.com/watch?v=YrI2pCZC8cc
+ * @see //https://www.youtube.com/watch?v=YrI2pCZC8cc
  */
 public class Accelerometer extends Activity implements SensorEventListener {
     private TextView xView, yView, zView;
     private Sensor mySensor;
     private SensorManager SM;
+    private LowPassFilter lowPassFilter;
     static final float ALPHA = 0.25f;
 
 
@@ -59,9 +60,14 @@ public class Accelerometer extends Activity implements SensorEventListener {
     @Override
     public void onSensorChanged(SensorEvent event) {
 
-        xView.setText("X: " + event.values[0]);
-        yView.setText("Y: " + event.values[1]);
-        zView.setText("Z: " + event.values[2]);
+        lowPassFilter = new LowPassFilter();
+        float[] output;
+        output = lowPassFilter.filter(event.values.clone(), event.values);
+
+
+        xView.setText("X: " + output[0]);
+        yView.setText("Y: " + output[1]);
+        zView.setText("Z: " + output[2]);
 
     }
 
