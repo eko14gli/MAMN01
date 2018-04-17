@@ -1,6 +1,7 @@
 package com.example.gustavlilja.inlmningsuppgift;
 
 /**
+ *
  * Created by gustavlilja on 2018-04-05.
  */
 
@@ -11,7 +12,7 @@ package com.example.gustavlilja.inlmningsuppgift;
  */
 public class LowPassFilter {
 
-    public static final float ALPHA = 0.2f;
+    public static final float ALPHA = 1f;
 
     public LowPassFilter() {
 
